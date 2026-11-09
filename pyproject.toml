@@ -1,0 +1,20 @@
+[project]
+name = "sito-be"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fundor333", email = "fundor333@fundor333.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.162.2",
+    "sqlmodel>=0.0.48",
+]
+
+[project.scripts]
+sito-be = "sito_be:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
